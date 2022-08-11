@@ -2,6 +2,9 @@ import react from 'react';
 import './css/Login.css';
 import login from './Mobile-login-Cristina.jpg';
 import { useState } from 'react';
+import Home from './Home';
+import {useNavigate} from 'react-router-dom';
+
 function Login(){
     const[inputs, setInputs] = useState({});
 
@@ -11,10 +14,12 @@ function Login(){
         setInputs(values=>({...values,[name]:value}))
 
     }
+    const navigate = useNavigate();
+
     const handleSubmit=(event)=>{
         event.preventDefault(); 
         console.log(inputs);
-
+        navigate('/Home');
     }
     return(
         <>
@@ -34,7 +39,7 @@ function Login(){
                         </label>
                         <br></br>
                         <center><input type="submit" value="Login"></input></center>
-                        <center><a href="#">Forgot Password? | </a><a href="#">Singup?</a></center>
+                        <center><a href="#">Forgot Password? | </a><a href="register">Singup?</a></center>
                     </div>
                     </form>
                 </div>
