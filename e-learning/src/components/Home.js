@@ -13,6 +13,7 @@ import node from './Images/node-modified.png';
 import dsa from './Images/dsa.png';
 import react from './Images/react.png';
 import Nav from './nav';
+import Footer from './footer';
 function Home(){
     const ratingChanged = (newRating) => {
         console.log(newRating);
@@ -33,7 +34,7 @@ function Home(){
                 
             </div>
         </div>
-        <div class="spl" id="courseid">
+        <div class="spl" id="coursename">
         <h2>Courses</h2>
         </div>
         <div class="table">
@@ -155,8 +156,13 @@ From Beginner to Beyond</h4>
         </div>
 
         </div>
-    
+        <div className="footercontainer">
+        <Footer />
+
         </div>
+        
+        </div>
+        
     );
 }
 export default Home;

@@ -111,3 +111,49 @@
     border:none;
     cursor:pointer;
 }
+
+/* footer */
+.footbottom{
+    background-color: white;
+    margin-top: 20px;
+    color:white;
+    padding-top:50px;
+    
+    
+}
+.foot{
+    background-color: white;
+    display: flex;
+    margin-left: 100px;
+    color:white;
+    
+}
+.foot1{
+    color:black;
+    text-align: center;
+    width:33.3333%;
+}
+.foot2{
+    text-align: center;
+    color:black;
+    width:33.3333%;
+}
+.foot3{
+    
+    text-align: center;
+    color:black;
+    width:33.3333%;
+}
+.foot4{
+    
+    text-align: center;
+    color:black;
+    width:33.3333%;
+}
+
+.foot5{
+    margin-top:40px;
+    background-color: var(--logo);
+    padding:3px;
+
+}
