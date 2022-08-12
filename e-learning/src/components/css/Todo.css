@@ -8,6 +8,10 @@
     color:#8685f0;
     text-shadow: 2px 2px 4px black;
 }
+.formtodo{
+    display:flex;
+    justify-content: center;
+}
 
 .card-body form input[type=text]{
     width:20%;
@@ -41,3 +45,15 @@
 .deladd input[type=checkbox]:checked + label.strikethrough{
     text-decoration: line-through;
   }
+.formtodo input[type=text]{
+        margin:14px;
+  }
+.formtodo input[type=submit]{
+    background-color: #8685f0;
+    border:none;
+    margin:14px;
+ 
+    font-size: 19px;
+
+    box-shadow: 2px 2px 4px black;
+}

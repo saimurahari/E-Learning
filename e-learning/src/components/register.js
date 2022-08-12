@@ -24,19 +24,19 @@ function Register(){
                         <h1>Register</h1>
                     
                         <label>
-                            Email:<input type="email" name="email" value={inputs.email||""} onChange={hanldeChange} placeholder="Enter Email"></input>
+                            Email:<input type="email" name="email" value={inputs.email||""} onChange={hanldeChange} placeholder="Enter Email" required></input>
                         </label>
                         <label>
-                            Name:<input type="text" name="fullname" value={inputs.fullname||""} onChange={hanldeChange} placeholder="Enter Full Name"></input>
+                            Name:<input type="text" name="fullname" value={inputs.fullname||""} onChange={hanldeChange} placeholder="Enter Full Name" required></input>
                         </label>
                         <label>
-                            Mobile:<input type="text" name="mobile" value={inputs.mobile||""} onChange={hanldeChange} placeholder="Enter Mobile Number" maxLength="10"></input>
+                            Mobile:<input type="text" name="mobile" value={inputs.mobile||""} onChange={hanldeChange} placeholder="Enter Mobile Number" maxLength="10" required></input>
                         </label>
                         <label>
-                            Date of Birth:<input type="date" name="dob" value={inputs.dob||""} onChange={hanldeChange} placeholder="Enter Date of birth" ></input>
+                            Date of Birth:<input type="date" name="dob" value={inputs.dob||""} onChange={hanldeChange} placeholder="Enter Date of birth" required></input>
                         </label>
                         <label>
-                            Password:<input type="password" name="password"  value={inputs.password||""} onChange={hanldeChange} placeholder="Enter Password"></input>
+                            Password:<input type="password" name="password"  value={inputs.password||""} onChange={hanldeChange} placeholder="Enter Password" required></input>
                         </label>
                         <br></br>
                         <center><input type="submit" value="Register"></input></center>

@@ -14,6 +14,7 @@ import dsa from './Images/dsa.png';
 import react from './Images/react.png';
 import Nav from './nav';
 import Footer from './footer';
+import Login from './Login';
 function Home(){
     const ratingChanged = (newRating) => {
         console.log(newRating);
@@ -34,10 +35,10 @@ function Home(){
                 
             </div>
         </div>
-        <div class="spl" id="coursename">
+        <div className="spl" id="coursename">
         <h2>Courses</h2>
         </div>
-        <div class="table">
+        <div className="table">
             <a><img src={c} alt="c"></img><h4>C++</h4></a>
             <a><img src={python} alt="python"></img><h4>Python</h4></a>
             <a><img src={html} alt="html"></img><h4>HTML/CSS</h4></a>
@@ -48,11 +49,12 @@ function Home(){
             <a><img src={react} alt="react"></img><h4>React JS</h4></a>
 
         </div>
-        <div class="spl" id="courseid">
+        <div className="spl" id="courseid">
         <h2>Topics Recommended for you</h2>
         </div>
-        <div class="table2">
-        <table class="recommended">
+        <div className="table2">
+        <table className="recommended">
+        <tbody>
             <tr align="center">
                 <td><button>Web Development</button></td>
                 <td><button>.Net</button></td>
@@ -66,13 +68,14 @@ function Home(){
                 <td><button>Redux</button></td>
                 <td><button>HTML</button></td>
             </tr>
+            </tbody>
         </table>
 
         </div>
-        <div class="spl" id="courseid">
+        <div className="spl" id="courseid">
         <h2>Best Offers!!</h2>
         </div>
-        <div class="table">
+        <div className="table">
             
             <a><img src={html} alt="html"></img><h4>HTML/CSS:
                 Learn HTML and CSS The Complete 2022 Web Development Guide</h4>

@@ -1,7 +1,7 @@
 import react from 'react';
 import './css/Login.css';
 import login from './Mobile-login-Cristina.jpg';
-import { useState } from 'react';
+import { useState} from 'react';
 import Home from './Home';
 import {useNavigate} from 'react-router-dom';
 
@@ -14,15 +14,18 @@ function Login(){
         setInputs(values=>({...values,[name]:value}))
 
     }
+    
     const navigate = useNavigate();
-
+    
     const handleSubmit=(event)=>{
         event.preventDefault(); 
         console.log(inputs);
         navigate('/Home');
     }
     return(
+        
         <>
+
         <div className="background">
             <header className="container">
                 <img src={login} width="55%" alt="login"/>
@@ -32,10 +35,10 @@ function Login(){
                         <h1>Login</h1>
                         <br></br>
                         <label>
-                            Email:<input type="email" name="username" value={inputs.username||""} onChange={hanldeChange} placeholder="Enter Email"></input>
+                            Email:<input type="email" name="username" value={inputs.username||""} onChange={hanldeChange} placeholder="Enter Email" required></input>
                         </label>
                         <label>
-                            Password:<input type="password" name="password"  value={inputs.password||""} onChange={hanldeChange} placeholder="Enter Password"></input>
+                            Password:<input type="password" name="password"  value={inputs.password||""} onChange={hanldeChange} placeholder="Enter Password" required></input>
                         </label>
                         <br></br>
                         <center><input type="submit" value="Login"></input></center>

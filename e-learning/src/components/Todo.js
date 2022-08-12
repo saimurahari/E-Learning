@@ -29,8 +29,8 @@ function Todo(){
           <div className = "card-body">
             <h1>To Do List</h1>
             <center>
-            <form onSubmit={submitHandler}>
-              <input type = "text" name = "task" id ="text" value = {task} onChange={changeHandler} required/>
+            <form onSubmit={submitHandler} className="formtodo">
+              <input type = "text" name = "task" id ="text" value = {task} onChange={changeHandler} placeholder="TodoList" required/>
               <input type = "submit" value="+" id = "add" name = "Add"/>
               
 
