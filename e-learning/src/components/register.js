@@ -22,7 +22,7 @@ function Register(){
                 <form onSubmit={handleSubmit}>
                 <div className="form2">
                         <h1>Register</h1>
-                    
+                    <h2>sd</h2>
                         <label>
                             Email:<input type="email" name="email" value={inputs.email||""} onChange={hanldeChange} placeholder="Enter Email" required></input>
                         </label>
